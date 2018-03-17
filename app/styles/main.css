@@ -1,0 +1,27 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 20pt;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+
+.sidebar {
+    background-color: lightgray;
+    width: 180px;
+    height: 90%;
+    position: absolute;
+    float: left;
+    max-width: 200px;
+}
+
+.room-list {
+  float: left;
+  font-size: 12pt;
+  font-family: sans-serif;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 1px;
+}
