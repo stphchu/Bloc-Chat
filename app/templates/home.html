@@ -1,6 +1,13 @@
 <section class="sidebar">
   <h1>Bloc Chat</h1>
-  <ul class="room-list" ng-repeat="room in roomList">
-    {{ room.$value }}
-  </ul>
+
+  <div class="new-room-btn" ng-controller="ModalCtrl as modals">
+        <ul><button type="button" class="btn btn-default" ng-click="modals.open()">New room</button></ul>
+  </div>
+
+  <div>
+    <ul class="room-list" ng-repeat="room in roomList">
+      {{ room.$value }}
+    </ul>
+  </div>
 </section>

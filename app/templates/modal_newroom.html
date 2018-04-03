@@ -1,0 +1,17 @@
+<div>
+    <div class="modal-header">
+        <h4 class="modal-title">Create new room</h4>
+    </div>
+    <div class="modal-body">
+      <form novalidate class="simple-form">
+        <label>
+          Room name: <br>
+          <input ng-model="modalInstance.roomName" type="text"/>
+        </label>
+      </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="modalInstance.ok()">Add Room</button>
+        <button class="btn btn-warning" type="button" ng-click="modalInstance.cancel()">Cancel</button>
+    </div>
+</div>
