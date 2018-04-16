@@ -1,12 +1,13 @@
 <div>
     <div class="modal-header">
-        <h4 class="modal-title">Create new room</h4>
+      <h4 class="modal-title">Create a new room</h4>
     </div>
     <div class="modal-body">
       <form novalidate class="simple-form">
         <label>
           Room name: <br>
-          <input ng-model="modalInstance.roomName" type="text"/>
+          <input ng-model="modalInstance.roomName" type="text"/> <br>
+          <p id="errorMessage" ng-model="modalInstance.error"></p>
         </label>
       </form>
     </div>

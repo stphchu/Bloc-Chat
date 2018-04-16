@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
-h1 {
-  font-size: 18pt;
+#chatName {
+  font-size: 16pt;
   position: relative;
   margin-top: 5px;
   margin-bottom: 10px;
-  margin-left: 29px;
+  margin-left: 40px;
+}
+
+#errorMessage {
+  color: red;
+  font-weight: lighter;
 }
 
 .sidebar {
@@ -23,15 +28,26 @@ h1 {
 
 .room-list {
   position: relative;
-  font-size: 12pt;
-  font-family: Arial, sans-serif;;
+  font-size: 15pt;
+  font-family: Arial, sans-serif;
   color: gray;
-  margin-top: 5px;
   margin-bottom: 0;
 }
 
 .new-room-btn {
   position: relative;
-  margin-left: 12px;
+  margin-left: 20px;
   margin-bottom: 25px;
+}
+
+.chatRoom {
+  float: left;
+  padding-left: 200px;
+}
+
+.currentRoomName {
+  color: gray;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding-bottom: 10px;
 }

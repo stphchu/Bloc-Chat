@@ -7,10 +7,7 @@
     Room.all = rooms;
 
     Room.add = function(roomName) {
-      rooms.$add(roomName)
-        .catch(function(data){
-          console.log(data);
-        })
+      rooms.$add(roomName);
     }
 
     return Room;

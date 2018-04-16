@@ -1,5 +1,5 @@
 <section class="sidebar">
-  <h1>Bloc Chat</h1>
+  <h1 id="chatName">Bloc Chat</h1>
 
   <div class="new-room-btn" ng-controller="ModalCtrl as modals">
         <ul><button type="button" class="btn btn-default" ng-click="modals.open()">New room</button></ul>
@@ -7,7 +7,16 @@
 
   <div>
     <ul class="room-list" ng-repeat="room in roomList">
-      {{ room.$value }}
+      <button type="button" class="btn btn-link" ng-click="setCurrentRoom(room)">{{ room.$value }}</button>
     </ul>
+  </div>
+</section>
+
+<section class="chatRoom">
+  <div>
+    <h3 class="currentRoomName">{{ currentRoom.$value }}</h3>
+  </div>
+  <div ng-repeat="message in messages">
+    <p>{{ message.content }}</p>
   </div>
 </section>
