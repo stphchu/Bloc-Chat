@@ -16,7 +16,7 @@
   <div>
     <h3 class="currentRoomName">{{ currentRoom.$value }}</h3>
   </div>
-  <div ng-repeat="message in messages">
-    <p>{{ message.content }}</p>
+  <div ng-repeat="message in allMessages">
+    <p>({{ message.sentAt }}) <b>{{ message.username }}</b>: {{ message.content }}</p>
   </div>
 </section>
