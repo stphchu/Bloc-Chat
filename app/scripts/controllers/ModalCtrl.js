@@ -1,5 +1,5 @@
 (function() {
-    function ModalCtrl($uibModal, Room) {
+    function ModalCtrl($uibModal, Room, $scope) {
         this.open = function() {
             var newRoomModal = $uibModal.open({
                 templateUrl: '/templates/modal_newroom.html',
@@ -7,12 +7,13 @@
             })
 
             newRoomModal.result.then(function(roomName) {
-              Room.add(roomName)
-            })
-        }
+              Room.add(roomName);
+              }
+            )
     }
+}
 
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['$uibModal', 'Room', ModalCtrl])
+        .controller('ModalCtrl', ['$uibModal', 'Room', '$scope', ModalCtrl])
 })();

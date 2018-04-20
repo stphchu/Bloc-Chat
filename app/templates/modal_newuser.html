@@ -1,0 +1,16 @@
+<div>
+    <div class="modal-header">
+      <h4 class="modal-title">Set a username</h4>
+    </div>
+    <div class="modal-body">
+      <form novalidate class="simple-form" ng-submit="newUserPrompt.ok()">
+        <label>
+          This name will appear when you send messages: <br>
+          <input ng-model="newUserPrompt.username" type="text"/> <br>
+        </label>
+      </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="newUserPrompt.ok()">Set username</button>
+    </div>
+</div>

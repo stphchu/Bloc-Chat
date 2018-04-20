@@ -10,7 +10,14 @@
       rooms.$add(roomName);
     }
 
-    return Room;
+    Room.isDuplicate = function(roomName){
+      var roomNames = rooms.map(function(room) {
+        return room.$value;
+      })
+        return roomNames.includes(roomName);
+    }
+
+  return Room;
   }
 
   angular

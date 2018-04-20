@@ -13,9 +13,10 @@
   "author": "Bloc Inc",
   "license": "ISC",
   "dependencies": {
+    "angular-cookies": "^1.6.4",
     "hapi": "~16.4.0",
-    "path": "^0.4.9",
-    "inert": "^4.2.0"
+    "inert": "^4.2.0",
+    "path": "^0.4.9"
   },
   "engines": {
     "node": ">=6.11.1"
