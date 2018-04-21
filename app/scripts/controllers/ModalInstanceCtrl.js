@@ -6,7 +6,7 @@
 
         this.ok = function() {
           if (Room.isDuplicate(this.roomName)){
-            $scope.errorMessage = "*Room already exists";
+            $scope.newRoomError = "*Room already exists";
             return;
           }
           else {
