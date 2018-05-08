@@ -6,7 +6,7 @@
             return;
           }
           else {
-          $uibModalInstance.close(this.username)
+            $uibModalInstance.close(this.username)
           };
         }
     }

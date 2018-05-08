@@ -10,7 +10,6 @@
       rooms.$add(roomName);
     }
 
-// Test for exisiting room name
     Room.isDuplicate = function(roomName){
       var roomNames = rooms.map(function(room) {
         return room.$value;

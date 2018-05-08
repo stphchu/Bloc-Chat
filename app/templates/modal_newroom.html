@@ -3,7 +3,7 @@
       <h4 class="modal-title">Create a new room</h4>
     </div>
     <div class="modal-body">
-      <form novalidate class="simple-form">
+      <form novalidate class="simple-form" ng-submit="modalInstance.ok()">
         <label>
           Room name: <br>
           <input ng-model="modalInstance.roomName" type="text"/> <br>
