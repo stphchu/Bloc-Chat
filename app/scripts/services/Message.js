@@ -16,6 +16,9 @@
         "roomId": roomId
       });
 
+      newMessage = null;
+      document.getElementById("messageField").value = "";
+
     };
 
     return Message;

@@ -27,9 +27,9 @@
     </p>
   </div>
   <div id="sendMessageSection">
-    <form class="form-inline" name="chatForm" novalidate class="simple-form" ng-submit="sendMessage(newMessage, currentRoom.$id)">
+    <form class="form-inline" novalidate class="simple-form" ng-submit="sendMessage(newMessage, currentRoom.$id)">
         <div class="form-group">
-          <input class="form-control" name="messageField" type="text" ng-model="newMessage" placeholder="Write your message here..."/><button type="button" class="btn btn-light" ng-click="sendMessage(newMessage, currentRoom.$id)">Send</button>
+          <input id="messageField" type="text" ng-model="newMessage" placeholder="Write your message here..."/><button type="button" class="btn btn-light" ng-click="sendMessage(newMessage, currentRoom.$id)">Send</button>
         </div>
     </form>
   </div>

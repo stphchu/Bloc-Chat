@@ -7,8 +7,6 @@
         $scope.sendMessage = Message.send;
       }
 
-
-
     }
 
     angular
